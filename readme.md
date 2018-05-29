@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/taddeini/sauce-labs-sample.svg?branch=master)](https://travis-ci.org/taddeini/sauce-labs-sample)
