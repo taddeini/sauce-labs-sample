@@ -3,8 +3,16 @@
   "version": "0.0.1",
   "description": "Example project for running tests with Sauce Labs, Selenium, webdriver.io",
   "main": "index.js",
-  "scripts": {    
+  "scripts": {
+    "test": "./node_modules/.bin/wdio ./src/wdio.conf.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-sauce-service": "^0.4.8",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.12.0"
+  }
 }
