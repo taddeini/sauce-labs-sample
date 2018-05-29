@@ -105,8 +105,7 @@ describe('[Sauce Labs Sample] ' + testNameGenerator.generateTestName(' - Go sear
     function isThisPageInSmallView() {
         /*
         Determine if large or small view, aso we can do different actions based on size
-        */
-        console.log('Determining view size.');
+        */        
         return browser.isExisting('body.size-s');
     }
 
@@ -162,8 +161,7 @@ describe('[Sauce Labs Sample] ' + testNameGenerator.generateTestName(' - Go sear
                             console.log('Unable to locate a valid add to cart button in: ' + browser.getUrl());
                         }
                     }
-                });
-                console.log('Found a sku to use');
+                });                
                 return skuToUse;
             }
             catch (e) {
