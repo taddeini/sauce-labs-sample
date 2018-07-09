@@ -10,7 +10,8 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './src/index.js'
+        //'./src/index.js'
+        './src/examples/mocha-timeout.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -45,102 +46,102 @@ exports.config = {
     //
 
     capabilities: [
-        {
-            browserName: 'firefox',
-            avoidProxy: true,
-            version: 'latest',
-            prefixName: 'Mac Firefox Selenium tests',
-            platform: 'OS X 10.9'
-        },
+        // {
+        //     browserName: 'firefox',
+        //     avoidProxy: true,
+        //     version: 'latest',
+        //     prefixName: 'Mac Firefox Selenium tests',
+        //     platform: 'OS X 10.9'
+        // },
         {
             browserName: 'chrome',
             avoidProxy: true,
             version: 'latest',
             prefixName: 'Mac Chrome Selenium tests',
             platform: 'OS X 10.13'
-        },
-        {
-            browserName: 'safari',
-            avoidProxy: true,
-            version: 'latest',
-            prefixName: 'Mac Safari Selenium tests',
-            platform: 'OS X 10.13',
-        },
-        {
-            browserName: 'firefox',
-            avoidProxy: true,
-            version: 'latest',
-            prefixName: 'Windows Firefox Selenium tests',
-            platform: 'Windows 10'
-        },
-        {
-            browserName: 'chrome',
-            avoidProxy: true,
-            version: 'latest',
-            prefixName: 'Windows Chrome Selenium tests',
-            platform: 'Windows 10'
-        },
-        {
-            browserName: 'internet explorer',
-            avoidProxy: true,
-            version: 'latest',
-            prefixName: 'Windows IE Selenium tests',
-            platform: 'Windows 10'
-        },
-        {
-            browserName: 'microsoftedge',
-            avoidProxy: true,
-            version: 'latest',
-            prefixName: 'Windows IEdge Selenium tests',
-            platform: 'Windows 10'
-        },
-        {
-            prefixName: 'iOS iPhone 6 Safari portrait',
-            browserName: 'safari',
-            avoidProxy: true,
-            deviceName: 'iPhone 6 Simulator',
-            deviceType: 'phone',
-            deviceOrientation: 'portrait',
-            platformVersion: '9.3',
-            platformName: 'iOS',
-        },
-        {
-            prefixName: 'iOS iPhone 6 Safari landscape',
-            browserName: 'safari',
-            avoidProxy: true,
-            deviceName: 'iPhone 6 Simulator',
-            deviceType: 'phone',
-            deviceOrientation: 'landscape',
-            platformVersion: '9.3',
-            platformName: 'iOS',
-        },
-        {
-            prefixName: 'Android Samsung Galaxy S8 Plus GoogleAPI Chrome portrait',
-            browserName: "Chrome",
-            avoidProxy: true,
-            deviceName: "Samsung Galaxy S8 Plus GoogleAPI Emulator",
-            chromeOptions: {
-                args: ['-–lang=es'],
-            },
-            deviceType: 'phone',
-            deviceOrientation: 'portrait',
-            platformName: "Android",
-            platformVersion: "7.1"
-        },
-        {
-            prefixName: 'Android Samsung Galaxy S8 Plus GoogleAPI Chrome landscape',
-            browserName: "Chrome",
-            avoidProxy: true,
-            deviceName: "Samsung Galaxy S8 Plus GoogleAPI Emulator",
-            chromeOptions: {
-                args: ['-–lang=es'],
-            },
-            deviceType: 'phone',
-            deviceOrientation: 'landscape',
-            platformName: "Android",
-            platformVersion: "7.1"
-        }
-],
+        }//,
+        // {
+        //     browserName: 'safari',
+        //     avoidProxy: true,
+        //     version: 'latest',
+        //     prefixName: 'Mac Safari Selenium tests',
+        //     platform: 'OS X 10.13',
+        // },
+        // {
+        //     browserName: 'firefox',
+        //     avoidProxy: true,
+        //     version: 'latest',
+        //     prefixName: 'Windows Firefox Selenium tests',
+        //     platform: 'Windows 10'
+        // },
+        // {
+        //     browserName: 'chrome',
+        //     avoidProxy: true,
+        //     version: 'latest',
+        //     prefixName: 'Windows Chrome Selenium tests',
+        //     platform: 'Windows 10'
+        // },
+        // {
+        //     browserName: 'internet explorer',
+        //     avoidProxy: true,
+        //     version: 'latest',
+        //     prefixName: 'Windows IE Selenium tests',
+        //     platform: 'Windows 10'
+        // },
+        // {
+        //     browserName: 'microsoftedge',
+        //     avoidProxy: true,
+        //     version: 'latest',
+        //     prefixName: 'Windows IEdge Selenium tests',
+        //     platform: 'Windows 10'
+        // },
+        // {
+        //     prefixName: 'iOS iPhone 6 Safari portrait',
+        //     browserName: 'safari',
+        //     avoidProxy: true,
+        //     deviceName: 'iPhone 6 Simulator',
+        //     deviceType: 'phone',
+        //     deviceOrientation: 'portrait',
+        //     platformVersion: '9.3',
+        //     platformName: 'iOS',
+        // },
+        // {
+        //     prefixName: 'iOS iPhone 6 Safari landscape',
+        //     browserName: 'safari',
+        //     avoidProxy: true,
+        //     deviceName: 'iPhone 6 Simulator',
+        //     deviceType: 'phone',
+        //     deviceOrientation: 'landscape',
+        //     platformVersion: '9.3',
+        //     platformName: 'iOS',
+        // },
+        // {
+        //     prefixName: 'Android Samsung Galaxy S8 Plus GoogleAPI Chrome portrait',
+        //     browserName: "Chrome",
+        //     avoidProxy: true,
+        //     deviceName: "Samsung Galaxy S8 Plus GoogleAPI Emulator",
+        //     chromeOptions: {
+        //         args: ['-–lang=es'],
+        //     },
+        //     deviceType: 'phone',
+        //     deviceOrientation: 'portrait',
+        //     platformName: "Android",
+        //     platformVersion: "7.1"
+        // },
+        // {
+        //     prefixName: 'Android Samsung Galaxy S8 Plus GoogleAPI Chrome landscape',
+        //     browserName: "Chrome",
+        //     avoidProxy: true,
+        //     deviceName: "Samsung Galaxy S8 Plus GoogleAPI Emulator",
+        //     chromeOptions: {
+        //         args: ['-–lang=es'],
+        //     },
+        //     deviceType: 'phone',
+        //     deviceOrientation: 'landscape',
+        //     platformName: "Android",
+        //     platformVersion: "7.1"
+        // }
+    ],
     //
     // ===================
     // Test Configurations
@@ -225,7 +226,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 300000,
+        //timeout: 300000,
+        timeout: 100,
         retries: 4
     },
     //
