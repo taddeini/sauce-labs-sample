@@ -178,6 +178,7 @@ exports.config = {
     // Default request retries count
     connectionRetryCount: 10,
 
+    commandTimeout: 1,
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as properties. Make sure you have
@@ -226,8 +227,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        //timeout: 300000,
-        timeout: 1000,
+        timeout: 300000,
+        //timeout: 1000,
         retries: 4
     },
     //
