@@ -54,6 +54,7 @@ exports.config = {
         //     platform: 'OS X 10.9'
         // },
         {
+            commandTimeout: 5,
             browserName: 'chrome',
             avoidProxy: true,
             version: 'latest',
@@ -178,7 +179,6 @@ exports.config = {
     // Default request retries count
     connectionRetryCount: 10,
 
-    commandTimeout: 5,
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as properties. Make sure you have
@@ -206,6 +206,8 @@ exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: false,
+
+    commandTimeout: 10,
 
     // services: ['selenium-standalone', 'phantomjs'],
     //

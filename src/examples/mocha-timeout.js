@@ -9,8 +9,7 @@ describe('[Sauce Labs Sample] - demo', () => {
         browser.url('https://www.bestbuy.com.mx/');
         browser.execute(function () {            
             while (true) {
-                var div = document.createElement('div');
-                document.body.appendChild(div);                
+                return true;
             }
         });
     });
