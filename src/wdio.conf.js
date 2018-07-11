@@ -11,7 +11,7 @@ exports.config = {
     //
     specs: [
         //'./src/index.js'
-        './src/examples/mocha-timeout.js'
+        './src/examples/demo.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -54,7 +54,7 @@ exports.config = {
         //     platform: 'OS X 10.9'
         // },
         {
-            //commandTimeout: 20,
+            //commandTimeout: 5,
             browserName: 'chrome',
             avoidProxy: true,
             version: 'latest',
