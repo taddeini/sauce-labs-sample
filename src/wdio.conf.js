@@ -54,7 +54,7 @@ exports.config = {
         //     platform: 'OS X 10.9'
         // },
         {
-            commandTimeout: 5,
+            commandTimeout: 20,
             browserName: 'chrome',
             avoidProxy: true,
             version: 'latest',
@@ -206,8 +206,6 @@ exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnect: false,
-
-    commandTimeout: 10,
 
     // services: ['selenium-standalone', 'phantomjs'],
     //
