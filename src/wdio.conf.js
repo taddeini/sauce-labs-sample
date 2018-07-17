@@ -54,7 +54,7 @@ exports.config = {
         //     platform: 'OS X 10.9'
         // },
         {
-            //commandTimeout: 5,
+            commandTimeout: 1,
             browserName: 'chrome',
             avoidProxy: true,
             version: 'latest',
@@ -227,8 +227,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        //timeout: 300000,
-        timeout: 1000,
+        timeout: 300000,
+        //timeout: 1000,
         retries: 4
     },
     //
