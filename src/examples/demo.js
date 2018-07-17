@@ -1,5 +1,3 @@
-const assert = require('chai').assert;
-
 describe('[Sauce Labs Sample] - demo', () => {
     it('should fail due to timeouts', () => {
         // Load
