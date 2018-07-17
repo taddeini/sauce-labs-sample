@@ -54,7 +54,8 @@ exports.config = {
         //     platform: 'OS X 10.9'
         // },
         {
-            commandTimeout: 1,
+            //commandTimeout: 5,
+            extendedDebugging: true,
             browserName: 'chrome',
             avoidProxy: true,
             version: 'latest',
