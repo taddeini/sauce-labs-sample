@@ -55,7 +55,7 @@ exports.config = {
         // },
         {
             //commandTimeout: 5,
-            //extendedDebugging: true,
+            extendedDebugging: true,
             browserName: 'chrome',
             avoidProxy: true,
             version: 'latest',
